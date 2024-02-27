@@ -1,5 +1,3 @@
-package previous;
-
 import java.util.*;
 
 public class Repository {

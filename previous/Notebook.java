@@ -1,5 +1,3 @@
-package previous;
-
 import java.util.Objects;
 
 public class Notebook {
@@ -76,7 +74,7 @@ public class Notebook {
 
     @Override
     public String toString() {
-        return "previous.Notebook{" +
+        return "Notebook{" +
                 "processor='" + processor + '\'' +
                 ", randomAccessMemory=" + randomAccessMemory +
                 ", hardDrive=" + hardDrive +
