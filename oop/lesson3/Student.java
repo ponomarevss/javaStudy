@@ -4,11 +4,13 @@ public class Student implements Comparable<Student>{
     private String name;
     private int age;
     private String specialization;
+    private double marks;
 
-    public Student(String name, int age, String specialization) {
+    public Student(String name, int age, String specialization, double marks) {
         this.name = name;
         this.age = age;
         this.specialization = specialization;
+        this.marks = marks;
     }
 
     public String getName() {
@@ -35,12 +37,21 @@ public class Student implements Comparable<Student>{
         this.specialization = specialization;
     }
 
+    public double getMarks() {
+        return marks;
+    }
+
+    public void setMarks(double marks) {
+        this.marks = marks;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", specialization='" + specialization + '\'' +
+                ", marks=" + marks +
                 '}';
     }
 

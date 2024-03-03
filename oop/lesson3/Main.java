@@ -1,42 +1,34 @@
 package oop.lesson3;
 
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-/**
- * - Создать класс Студент
- * - Создать класс УчебнаяГруппа
- * - Создать класс УчебнаяГруппаИтератор, заставив его реализовать интерфейс Iterator
- * - Реализовать его контракты
- *
- *
- *
- *
- * - Модифицировать класс Студент, заставив его реализовать интерфейс Comparable
- * - Реализовать контракт compareTo () со сравнением по какому-либо параметру (пример studentId)
- *
- *
- *
- * - Создать класс СтудентКомпаратор реализующий интерфейс Comparator
- * - Реализовать контракт compare () со сравнением по какому-либо параметру (пример: сочетание Имя+Фамилия)
- */
 public class Main {
     public static void main(String[] args) {
-        Student s1 = new Student("Q", 20, "Chemistry");
-        Student s5 = new Student("Q", 26, "Chemistry");
-        Student s2 = new Student("A", 22, "Chemistry");
-        Student s3 = new Student("Z", 24, "Chemistry");
-        Student s4 = new Student("E", 21, "Chemistry");
-        ArrayList<Student> students = new ArrayList<>(List.of(s1, s2, s3, s4, s5));
 
-        Group group = new Group(students);
+        Stream stream1 = new Stream(
+                new ArrayList<>(
+                        List.of(
+                                new Group("G1"),
+                                new Group("G2"),
+                                new Group("G3"),
+                                new Group("G4")
+                        )
+                )
+        );
+        Stream stream2 = new Stream(
+                new ArrayList<>(
+                        List.of(
+                                new Group("J1"),
+                                new Group("J2"),
+                                new Group("J3")
+                        )
+                )
+        );
 
-        students.sort(new StudentComparator());
+        ArrayList<Stream> faculty = new ArrayList<>(List.of(stream2, stream1));
+        faculty.sort(new StreamComparator());
+        System.out.println(faculty);
 
-        for (Student student : group) {
-            System.out.println(student);
-        }
     }
 }
