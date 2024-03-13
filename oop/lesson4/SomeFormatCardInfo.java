@@ -1,4 +1,4 @@
-package oop.lesson6;
+package oop.lesson4;
 
 public class SomeFormatCardInfo<T> implements CardInfo<T> { // реализуем DIP, имплементируем CardInfo<T>
     // Абстрагируемся от Book. Удалены все упоминания Book

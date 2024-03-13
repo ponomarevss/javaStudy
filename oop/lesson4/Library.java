@@ -1,4 +1,4 @@
-package oop.lesson6;
+package oop.lesson4;
 
 import java.util.ArrayList;
 

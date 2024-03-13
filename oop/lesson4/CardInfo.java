@@ -1,4 +1,4 @@
-package oop.lesson6;
+package oop.lesson4;
 
 public interface CardInfo<T> {
     T getTitle();

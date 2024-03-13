@@ -1,4 +1,4 @@
-package oop.lesson6;
+package oop.lesson4;
 
 public class Book<T> implements Material<T>{ // реализуем DIP имплементируя интерфейс Material<T>
     private final T title;
