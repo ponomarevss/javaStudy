@@ -39,5 +39,15 @@ public class DataService implements Service{
         }
     }
 
+    @Override
+    public String readById(UserType userType, int id){
+        if (userType.equals(UserType.STUDENT)) {
+            for (Student student : students) {
+                if (student.getId() == id) return student.toString();
+            }
+        }
+        return null;
+    }
+
 
 }

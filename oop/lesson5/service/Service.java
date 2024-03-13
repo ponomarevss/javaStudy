@@ -5,4 +5,5 @@ import oop.lesson5.data.User;
 public interface Service {
     void create(User user);
     String read(UserType userType);
+    String readById(UserType userType, int Id);
 }

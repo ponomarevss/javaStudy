@@ -14,11 +14,15 @@ public class Presenter {
         this.view = view;
     }
 
-    public void addUser(User user){
+    public void addUser(User user) {
         data.create(user);
     }
 
-    public void showUsers(UserType userType){
+    public void showUsers(UserType userType) {
         view.set(data.read(userType));
+    }
+
+    public void showById(UserType userType, int id) {
+        view.set(data.readById(userType, id));
     }
 }

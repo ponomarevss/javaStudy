@@ -29,5 +29,7 @@ public class Main {
 
         presenter.showUsers(UserType.STUDENT);
         presenter.showUsers(UserType.TEACHER);
+
+        presenter.showById(UserType.STUDENT, 1);
     }
 }
