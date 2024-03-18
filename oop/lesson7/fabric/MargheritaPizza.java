@@ -1,6 +1,6 @@
-package oop.lesson7.pizzeria;
+package oop.lesson7.fabric;
 
-public class PepperoniPizza implements Pizza{
+public class MargheritaPizza implements Pizza{
     @Override
     public void cook() {
 

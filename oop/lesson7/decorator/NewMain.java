@@ -1,4 +1,4 @@
-package oop.lesson7;
+package oop.lesson7.decorator;
 
 public class NewMain {
     public static void main(String[] args) {

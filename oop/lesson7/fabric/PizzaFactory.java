@@ -1,4 +1,4 @@
-package oop.lesson7.pizzeria;
+package oop.lesson7.fabric;
 
 public class PizzaFactory {
     public Pizza createPizza(String name){

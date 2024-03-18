@@ -1,4 +1,4 @@
-package oop.lesson7;
+package oop.lesson7.decorator;
 
 public interface Message {
     void send();

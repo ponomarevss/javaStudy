@@ -1,4 +1,4 @@
-package oop.lesson7.docs;
+package oop.lesson7.adapter;
 
 public class OldDocument {
     void open(){

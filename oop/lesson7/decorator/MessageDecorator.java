@@ -1,4 +1,4 @@
-package oop.lesson7;
+package oop.lesson7.decorator;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
